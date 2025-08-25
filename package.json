@@ -1,0 +1,63 @@
+{
+  "name": "nth-m3u8-manager",
+  "version": "0.1.0",
+  "author": "nthung2112 (Hung Nguyen)",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@radix-ui/react-alert-dialog": "1.1.15",
+    "@radix-ui/react-dialog": "1.1.15",
+    "@radix-ui/react-dropdown-menu": "2.1.16",
+    "@radix-ui/react-label": "2.1.7",
+    "@radix-ui/react-scroll-area": "1.2.10",
+    "@radix-ui/react-slot": "1.2.3",
+    "@radix-ui/react-switch": "1.2.6",
+    "@radix-ui/react-tabs": "1.1.13",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "geist": "^1.4.2",
+    "lucide-react": "^0.541.0",
+    "next": "15.5.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "typescript": "^5"
+  },
+  "next": {
+    "config": [
+      "next.config.{js,ts,cjs,mjs}"
+    ],
+    "entry": [
+      "{instrumentation,instrumentation-client,middleware}.{js,ts}",
+      "app/global-error.{js,jsx,ts,tsx}",
+      "app/**/{error,layout,loading,not-found,page,template,default}.{js,jsx,ts,tsx}",
+      "app/**/route.{js,jsx,ts,tsx}",
+      "app/{manifest,sitemap,robots}.{js,ts}",
+      "app/**/{icon,apple-icon}.{js,jsx,ts,tsx}",
+      "app/**/{opengraph,twitter}-image.{js,jsx,ts,tsx}",
+      "mdx-components.{js,jsx,ts,tsx}",
+      "pages/**/*.{js,jsx,ts,tsx}",
+      "src/{instrumentation,instrumentation-client,middleware}.{js,ts}",
+      "src/app/global-error.{js,jsx,ts,tsx}",
+      "src/app/**/{error,layout,loading,not-found,page,template,default}.{js,jsx,ts,tsx}",
+      "src/app/**/route.{js,jsx,ts,tsx}",
+      "src/app/{manifest,sitemap,robots}.{js,ts}",
+      "src/app/**/{icon,apple-icon}.{js,jsx,ts,tsx}",
+      "src/app/**/{opengraph,twitter}-image.{js,jsx,ts,tsx}",
+      "src/mdx-components.{js,jsx,ts,tsx}",
+      "src/pages/**/*.{js,jsx,ts,tsx}"
+    ]
+  }
+}
