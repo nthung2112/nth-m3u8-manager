@@ -38,14 +38,14 @@ export function ChannelCard({ channel, onSave, onDelete }: ChannelCardProps) {
               <img
                 src={channel.tvgLogo || "/placeholder.svg"}
                 alt={channel.title}
-                className="w-30 h-10 rounded flex-shrink-0"
+                className="w-20 h-10 rounded flex-shrink-0"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                 }}
               />
             )}
             <div className="min-w-0 flex-1">
-              <CardTitle className="text-base truncate">{channel.title}</CardTitle>
+              <CardTitle className="text-base">{channel.title}</CardTitle>
               {channel.tvgId && (
                 <CardDescription className="text-xs">ID: {channel.tvgId}</CardDescription>
               )}

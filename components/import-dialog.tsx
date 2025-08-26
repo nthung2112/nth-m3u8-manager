@@ -159,7 +159,7 @@ export function ImportDialog({ onImportComplete, children }: ImportDialogProps) 
         )}
 
         {step === "preview" && parsedData && (
-          <div className="space-y-6">
+          <div className="space-y-6 overflow-hidden">
             <div className="space-y-2">
               <Label htmlFor="playlist-name">Playlist Name</Label>
               <Input
